@@ -121,14 +121,22 @@
       .header_logo_bg {    width: 50%;}
       .solution-dig{width: 70%;}
       .solution-dig .py-5.m-0{padding: 0px !important;}
+      .col-1{display: none}
+      .d-block-center-text {   top: 70%;}
         
     }
     @media screen and (max-width: 600px) {
       #carouselExampleControls .carousel-item {    height: 50vh;}
-      .brand_container img{display: none;}
+      .brand_container img{display: none !important;}
       #scroll-image{opacity: 0.9 !important;}
       .header.header-style-3{position: relative !important;}
       .col-1{display: none}
+      #carouselExampleControls .carousel-item .fs-1{font-size: 20px !important;}
+      #carouselExampleControls .carousel-item img{animation: none;}
+      
+    .d-block-center-text {
+        top: 50%;
+    }
     }
     @keyframes zoom-in-zoom-out {
       0% {
@@ -167,7 +175,7 @@
             menu
             </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item mx-3">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -533,7 +541,7 @@
   </section>
 
   <section class="section-padding glass-blue-bg">
-    <div class="container row justify-content-center px-0">
+    <div class="container row justify-content-center px-0 mx-auto">
 
       <div class="col-lg-4 col-md-5 col-sm-12 px-0 solution-dig">
         <div class="sticky-lg-top text-center" style="z-index: auto;">
@@ -545,35 +553,35 @@
       <div class="col-1"></div>
       <div class="col-lg-7 col-md-12 col-sm-12">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">display_settings</span>
             <h3>ITAM</h3>
             <p>
               <span class="text-primary">Information Technology Asset Management (ITAM)</span> is a strategic approach to managing an organization’s IT
               assets throughout their lifecycle. This process involves the acquisition, deployment, maintenance, and disposal of hardware, software, and network assets. </p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">sdk</span>
             <h3>ITSM</h3>
             <p>
               <span class="text-primary">Information Technology Service Management (ITSM)</span> is a systematic approach to designing, delivering,
               managing, and improving IT services within an organization.</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">readiness_score</span>
             <h3>MDM</h3>
             <p>
               <span class="text-primary">Meter Data Management (MDM)</span> is a system and process for collecting, validating, storing, and analyzing
               data from utility meters, such as electricity, water, and gas meters.</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">dvr</span>
             <h3>RMS</h3>
             <p>
               <span class="text-primary">A Records Management System (RMS)</span> is a comprehensive solution designed to manage an organization's
               records throughout their lifecycle. </p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">hub</span>
             <h3>NMS</h3>
             <p>
@@ -581,7 +589,7 @@
               organization's IT infrastructure. It involves continuous surveillance of a computer network to detect and
               respond to any issues that may affect network performance, security, and availability.</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">security</span>
             <h3>DTM</h3>
             <p>
@@ -589,7 +597,7 @@
               threats to an organization's data. It encompasses various strategies, tools, and practices aimed at
               protecting data from unauthorized access, breaches, and other malicious activities.</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">devices</span>
             <h3>UAM</h3>
             <p>
@@ -597,7 +605,7 @@
               lifecycle of digital assets used by utility companies, such as smart meters, sensors, communication
               devices, and data management systems. </p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 py-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-5 py-4">
             <span class="material-symbols-outlined">assured_workload</span>
             <h3>Compliance</h3>
             <p>
