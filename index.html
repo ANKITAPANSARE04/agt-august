@@ -111,6 +111,23 @@
     }
     .row.mx-auto.px-0  .col-lg-6.col-md-6.col-sm-12.py-4:hover{background-color: #dde3e7;border-radius: 10px;}
     .row.mx-auto.px-0  .col-lg-6.col-md-6.col-sm-12.py-4{cursor: pointer;} 
+    .video-caesoul{width: 50%;margin: 0 auto;}
+    .solution-dig img{width: 100%;}
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 992px) {
+      .video-caesoul{width: 80%;}
+      .navbar.navbar-expand-lg{padding: 30px;}
+      #carouselExampleControls .carousel-item {    height: 60vh;}
+      .header_logo_bg {    width: 50%;}
+      .solution-dig{width: 70%;}
+      .solution-dig .py-5.m-0{padding: 0px !important;}
+        
+    }
+    @media screen and (max-width: 992px) {
+      #carouselExampleControls .carousel-item {    height: 50vh;}
+      .brand_container img{display: none;}
+      #scroll-image{opacity: 0.9 !important;}
+    }
     @keyframes zoom-in-zoom-out {
       0% {
         transform: scale(1.5, 1.5);
@@ -124,6 +141,7 @@
         transform: scale(1.5, 1.5);
       }
     }
+    #scroll-image{width: 83px; position: fixed;  top: 0;  left: 40px;     opacity: 0;     transition: opacity 1s ease; }
   </style>
 
   <!-- logo start -->
@@ -137,14 +155,14 @@
   <!-- top navigation start -->
   <header style="position: fixed;top: 0;width: 100%;z-index: 99;" class="header header-style-3">
     <nav class="navbar navbar-expand-lg">
-      <a href=""><img id="scroll-image"
-          style=" width: 83px; position: fixed;  top: 0;  left: 40px;     opacity: 0;     transition: opacity 1s ease; "
-          src="./imgs/agt_svg.svg" alt=""></a>
+      <a href=""><img id="scroll-image" src="./imgs/agt_svg.svg" alt=""></a>
 
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="material-symbols-outlined">
+            menu
+            </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
@@ -182,7 +200,7 @@
           <img src="./imgs/banner1.png" class="d-block w-100" style="filter: grayscale(80%)" alt="..." />
           <div class="col-lg-8 d-block-center-text">
             <h2 class="fs-1 mb-4">Where Technology Meets Innovation</h2>
-            <h4 class="fs-3 mb-4">EMPOWER YOUR BUSINESS</h4>
+            
             <div class="hero-btn2 d-flex justify-content-center">
               <div class="video-btn mt-3">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
@@ -199,7 +217,7 @@
           <img src="./imgs/banner2.png" class="d-block w-100" style="filter: grayscale(80%)" alt="..." />
           <div class="col-lg-8 d-block-center-text">
             <h2 class="fs-1 mb-4">Where Technology Meets Innovation</h2>
-            <h4 class="fs-3 mb-4">EMPOWER YOUR BUSINESS</h4>
+            
             <div class="hero-btn2 d-flex justify-content-center">
 
               <div class="video-btn mt-3">
@@ -216,7 +234,7 @@
           <img src="./imgs/banner3.png" class="d-block w-100" style="filter: grayscale(80%)" alt="..." />
           <div class="col-lg-8 d-block-center-text">
             <h2 class="fs-1 mb-4">Where Technology Meets Innovation</h2>
-            <h4 class="fs-3 mb-4">EMPOWER YOUR BUSINESS</h4>
+            
             <div class="hero-btn2 d-flex justify-content-center">
 
               <div class="video-btn mt-3">
@@ -331,7 +349,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <!-- <img src="..." class="d-block w-100" alt="..."> -->
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">ITAM Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v1.mp4" type="video/mp4">
@@ -344,7 +362,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">Helpdesk Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v2.mp4" type="video/mp4">
@@ -357,7 +375,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">Website Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v3.mp4" type="video/mp4">
@@ -371,7 +389,7 @@
         </div>
         <div class="carousel-item">
           <!-- <img src="..." class="d-block w-100" alt="..."> -->
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">ITAM Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v1.mp4" type="video/mp4">
@@ -384,7 +402,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">Helpdesk Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v2.mp4" type="video/mp4">
@@ -397,7 +415,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">Website Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v3.mp4" type="video/mp4">
@@ -410,7 +428,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">Helpdesk Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v2.mp4" type="video/mp4">
@@ -424,7 +442,7 @@
         </div>
  
         <div class="carousel-item">
-          <div class="d-block w-50 mx-auto">
+          <div class="d-block video-caesoul ">
             <h3 class="text-center text-white mb-4">Helpdesk Demo</h3>
             <video class="w-100 " controls>
               <source src="./imgs/v2.mp4" type="video/mp4">
@@ -461,7 +479,7 @@
       <div class="row mx-3">
         <div class="col-lg-6 align-self-center" data-aos="fade-up-right">
           <!-- Section Headding -->
-          <div class="section-headding-3 mb-20">
+          <div class="section-headding-3 mt-5 mb-2">
             <h2>Services We Offer</h2>
           </div>
           <div class="core-feature-content">
@@ -500,6 +518,7 @@
               </div>
             </div>
           </div>
+          <br><br>
         </div>
         <div class="col-lg-6" data-aos="fade-up-left">
           <div class="core-feature-img text-center">
@@ -511,11 +530,11 @@
   </section>
 
   <section class="section-padding glass-blue-bg">
-    <div class="container row mx-auto px-0">
+    <div class="container row justify-content-center px-0">
 
-      <div class="col-lg-4 px-0 ">
+      <div class="col-lg-4 px-0 solution-dig">
         <div class="sticky-lg-top text-center" style="z-index: auto;">
-          <br> <br> <br> <br>
+           <div class="py-5 m-0"></div>
           <h2 class="my-4">AIGUTECH ENTERPRISE ASSET MANAGEMENT</h2>
           <img src="./imgs/soliution_dig.svg" alt="" class="w-100 mx-auto">
         </div>
