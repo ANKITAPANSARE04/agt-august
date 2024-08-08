@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Opacity Effect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ 
+
+#scroll-image {
+    position: fixed; /* Keeps the image in view while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.spacer {
+    height: 1500px; /* Additional content to ensure scrolling */
+}
+
+    </style>
+</head>
+<body>
+  
+        <img id="scroll-image" src="your-image.jpg" alt="Example Image">
+        <!-- Add more content here to create scroll -->
+        <div class="spacer"></div>
+ 
+    <script src="script.js"></script>
+    
+    <script>window.addEventListener('scroll', function() {
+        const image = document.getElementById('scroll-image');
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+    
+        // Calculate the opacity based on scroll position
+        const newOpacity = Math.min(scrollPosition / windowHeight, 0.9);
+        image.style.opacity = newOpacity;
+    });
+    </script>
+</body>
+</html>
